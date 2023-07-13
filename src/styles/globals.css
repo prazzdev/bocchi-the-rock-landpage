@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONT FACE */
+@font-face {
+  font-family: "Alata";
+  src: url("../../public/src/fonts/Alata-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins Reg";
+  src: url("../../public/src/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins Med";
+  src: url("../../public/src/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../../public/src/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "NotoSansJP Reg";
+  src: url("../../public/src/fonts/NotoSansJP-Regular.ttf");
+}
+
+
+/*  */
+
+/* FONT STYLE */
+.alata-font {
+  font-family: "Alata";
+}
+.poppins-reg {
+  font-family: "Poppins Reg";
+}
+.poppins-med {
+  font-family: "Poppins Med";
+}
+.poppins-bold {
+  font-family: "Poppins Bold";
+}
+.jp-font {
+  font-family: "NotoSansJP Reg";
+}
+/*  */
+
+/*  */
+* {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+body {
+  background-color: #08030e;
+}
+
+nav {
+  background-color: rgba(0,0,0,0);
+  /* filter: blur(1px); */
+}
+
+section, footer {
+  padding: 0 50px 0 50px;
+  color: white;
+}
+
+section#hero {
+  padding: 0;
+  position: relative;
+  background-image: url(../../public/src/images/hero.webp);
+  height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+}
+section#hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  background: linear-gradient(0deg, #08030e 8%, rgba(255,255,255,0) 50%);
+}
+
+div#hero-backdrop {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  filter: blur(21px);
+  z-index: 1;
+}
+#about-backdrop {
+  height: 70%;
+  width: 70%;
+  background-color: #ffcb1f52;
+  filter: blur(35px);
+  border-radius: 100%;
+  position: absolute;
+  /* top: -40px; */
+  /* left: 110px; */
+  z-index: -99;
+  border-radius: 100%;
+}
+#aboutImg {
+  height: 75%;
+  width:75%;
+  /* background-color: #f8cc3bef; */
+  background-image: url("../../public//src/images/hitori.webp");
+  background-size: 360%;
+  background-position-x: center;
+  background-position-y: center;
+  opacity: 60%;
+}
+@media(min-width: 1536px) {
+  #aboutImg {
+    height: 75%;
+    width:60%;
+  } 
+}
+
+/* BACKDROP */
+#char-backdrop {
+  height: 90%;
+  width: 80%;
+  background-color: #ffcb1f70;
+  filter: blur(80px);
+  border-radius: 100%;
+  position: absolute;
+  top: -40px;
+  left: 35px;
+  z-index: -99;
+}
+
+#merch-backdrop {
+  height: 90%;
+  width: 90%;
+  background-color: #ffcb1f52;
+  filter: blur(70px);
+  border-radius: 100%;
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  z-index: -99;
+}
+#subs-backdrop {
+  height: 80%;
+  width: 100%;
+  background-color: #ffffff6b;
+  filter: blur(80px);
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: -99;
+}
+/*  */
